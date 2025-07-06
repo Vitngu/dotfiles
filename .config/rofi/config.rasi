@@ -1,0 +1,59 @@
+configuration {
+	modi: "drun,combi";
+	font: "mono 12";
+	display-drun: ">";
+	drun-display-format: "{name}";
+}
+
+@theme "/dev/null"
+
+* {
+	bg: #000000;
+	bg-alt: #333333;
+	fg: #ffffff;
+	fg-alt: #a06666;
+
+	background-color: @bg;
+	color: @fg;
+}
+
+window {
+	width: 20%;
+        background-color: @bg;
+	border: 1px;
+	border-color: @fg-alt;
+}
+
+mainbox {
+	margin: 10px;
+}
+
+inputbar {
+	background-color: @bg;
+	children: [prompt,entry];
+	border: 0px 0px 1px 0px;
+	border-color: @fg-alt;
+}
+
+prompt {
+	color: @fg-alt;
+}
+
+listview {
+	padding: 10px;
+	lines: 15;
+}
+
+element.selected {
+	background-color: @bg-alt;
+	border: 1px;
+	border-color: @fg-alt;
+}
+
+scrollbar {
+    width:        3px ;
+    border:       0;
+    handle-color: @bg-alt;
+    handle-width: 4px ;
+    padding:      0;
+}
