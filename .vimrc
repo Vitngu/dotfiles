@@ -10,3 +10,10 @@ set hlsearch
 set showmatch
 set autoindent
 set smartindent
+
+call plug#begin()
+
+Plug 'junegunn/goyo.vim'
+map <C-f> :Goyo<CR>
+
+call plug#end()
