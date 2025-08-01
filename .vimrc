@@ -16,4 +16,6 @@ call plug#begin()
 Plug 'junegunn/goyo.vim'
 map <C-f> :Goyo<CR>
 
+Plug 'ap/vim-css-color'
+
 call plug#end()
