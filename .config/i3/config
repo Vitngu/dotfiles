@@ -174,10 +174,10 @@ default_border pixel 1
 default_floating_border pixel 1
 
 #wallpaper feh
-exec_always --no-startup-id feh --bg-fill $HOME/Pictures/walls/125351612_p0.jpg
+exec_always --no-startup-id feh --bg-fill $HOME/Pictures/walls/77353796_p0.jpg
 
 #i3lock
-bindsym $mod+Shift+x exec --no-startup-id i3lock -f -i $HOME/Pictures/walls/lockscreen.png
+bindsym $mod+Shift+x exec --no-startup-id i3lock -f -i $HOME/Pictures/walls/lockscreenXD.png
 
 #rofi power menu
 bindsym $mod+Shift+z exec --no-startup-id rofi -show power-menu -modi power-menu:rofi-power-menu
