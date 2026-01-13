@@ -174,10 +174,10 @@ default_border pixel 1
 default_floating_border pixel 1
 
 #wallpaper feh
-exec_always --no-startup-id feh --bg-fill $HOME/Pictures/walls/77353796_p0.jpg
+exec_always --no-startup-id feh --bg-fill -z $HOME/Pictures/walls/
 
 #i3lock
-bindsym $mod+Shift+x exec --no-startup-id i3lock -f -i $HOME/Pictures/walls/lockscreenXD.png
+bindsym $mod+Shift+x exec --no-startup-id i3lock -f -i $HOME/Pictures/lockscreens/lockscreenXD.png
 
 #rofi power menu
 bindsym $mod+Shift+z exec --no-startup-id rofi -show power-menu -modi power-menu:rofi-power-menu
@@ -201,5 +201,5 @@ exec --no-startup-id picom --config ~/.config/picom.conf -b
 bindsym Print exec --no-startup-id scrot ~/Pictures/Screenshots/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/Pictures/Screenshots/$(date +"%Y-%m-%d-%T")-screenshot.png"
 
 #keyboard layout
-exec fcitx5 -d
-
+exec_always --no-startup-id fcitx5 -d --replace
+exec --no-startup-id source ~/.xprofile
