@@ -1,10 +1,9 @@
 # .bashrc
 export TERM=xterm-256color
- 
-export XMODIFIERS="@im=fcitx5"
-export GTK_IM_MODULE=fcitx5
-export QT_IM_MODULE=fcitx5
-export SDL_IM_MODULE=fcitx5
+export XMODIFIERS=@im=fcitx
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export SDL_IM_MODULE=fcitx
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -28,6 +27,14 @@ if [ -d ~/.bashrc.d ]; then
         fi
     done
 fi
+
+# alias
+alias ff='fastfetch -l Pictures/Yunocchii.png --logo-height 19'
+alias la='ls -a'
+alias lla='ls -la'
+
+
+
 unset rc
 
 
